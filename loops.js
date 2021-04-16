@@ -214,3 +214,30 @@ for (i = 0; i < times; i++) {
     }
 
     // ANSWER: It prints true (for the word "radar"). It is a palindrome.
+
+
+//   ****This is just a Bonus, if you want more!* Advanced for loop experiment - what does this do??*****
+    // let t; 
+    // const cars = ["Ford", "Lada", "VW", "MB"];
+    // for (let i = 0, len = cars.length, t = ""; i < len; i++) {
+    //    t += cars[i] + "<br>";
+    // }
+
+    // ANSWER: it prints the array words/items in the following manner:
+    //  1st 1 followed by <br> , 
+    //  then 2 cars, each array item/car followed by  <br> 
+    //  then 3 cars, each array item/car followed by  <br> 
+    //  lastly the 4 cars, each array item/car folled by <br>
+    
+    
+    let t; 
+    const cars = ["Ford", "Lada", "VW", "MB"];
+    for (let i = 0, len = cars.length, t = ""; i < len; i++) {
+       t += cars[i] + "<br>";
+       console.log(t);
+    }
+// PRINTS:
+// Ford<br>
+// Ford<br>Lada<br>
+// Ford<br>Lada<br>VW<br>
+// Ford<br>Lada<br>VW<br>MB<br>
